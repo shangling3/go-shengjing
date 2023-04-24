@@ -1,14 +1,13 @@
-package main
-
-import "fmt"
+package sum
 
 func Sum1(param ...int) int {
 	sum := 0
-	for i := range param {
-		sum += i
+	for _, v := range param {
+		sum += v
 	}
 	return sum
 }
-func main() {
-	fmt.Println(Sum1(1, 2, 3, 4))
-}
+
+//func main() {
+//	fmt.Println(Sum1(1, 2, 3, 4))
+//}
